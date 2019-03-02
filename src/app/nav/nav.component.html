@@ -1,13 +1,39 @@
-<div class="logo">R</div>
+<div class="logo">
+  <img src="/assets/logo.png" />
+</div>
+
+<div class="mobile-menu-button" (click)="toggleMobileMenu()">
+  <mat-icon>menu</mat-icon>
+</div>
+
+<div class="logo-text">
+  <img src="/assets/logo-text.png" />
+</div>
 
 <div class="menu-bar">
-  <a [routerLink]="['/home']">Home</a>
-  <a [routerLink]="['/shop']">Shop</a>
-  <a [routerLink]="['/our-story']">Our story</a>
-  <a>Mission</a>
-  <a>Recipes</a>
+  <a class="menu-item" [routerLink]="['/home']">Home</a>
+  <a class="menu-item" [routerLink]="['/shop']">Shop</a>
+  <a class="menu-item" [routerLink]="['/our-story']">Our story</a>
+  <a class="menu-item">Mission</a>
+  <a class="menu-item">Recipes</a>
 
-  <mat-icon>home</mat-icon>
-  <mat-icon>home</mat-icon>
-  <button mat-stroked-button color="primary">Sign up</button>
+  <div class="spacer"></div>
+
+  <button mat-icon-button class="nav-icon">
+    <img src="/assets/shopping-cart.png" />
+  </button>
+
+  <button mat-icon-button class="nav-icon avatar">
+    <img src="/assets/avatar.png" />
+  </button>
+
+  <button mat-stroked-button class="sign-up-button" color="primary">Sign up</button>
+</div>
+
+<div class="mobile-menu" [class.open]="mobileMenuOpen">
+  <a class="menu-item" (click)="toggleMobileMenu()" [routerLink]="['/home']">Home</a>
+  <a class="menu-item" (click)="toggleMobileMenu()" [routerLink]="['/shop']">Shop</a>
+  <a class="menu-item" (click)="toggleMobileMenu()" [routerLink]="['/our-story']">Our story</a>
+  <a class="menu-item" (click)="toggleMobileMenu()">Mission</a>
+  <a class="menu-item" (click)="toggleMobileMenu()">Recipes</a>
 </div>
