@@ -3,7 +3,7 @@ api_version: 1
 threadsafe: true
 
 handlers:
-  - url: /(.+).(css|html|js|json|png|svg)
+  - url: /(.+).(css|html|js|json|png|svg|ico)
     static_files: dist/Reel-Fish-Co/\1.\2
     upload: dist/Reel-Fish-Co/.*
 
