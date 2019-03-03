@@ -18,7 +18,7 @@ export class NavComponent implements OnInit {
   }
 
   public get cartItemsCount(): number | null {
-    const numItems = this.cartService.cartItems.length;
+    const numItems = this.cartService.totalQuantity;
     return numItems > 0 ? numItems : null;
   }
 }

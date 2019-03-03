@@ -19,7 +19,12 @@
 
   <div class="spacer"></div>
 
-  <button mat-icon-button class="nav-icon" [matBadge]="cartItemsCount" [routerLink]="['/cart']">
+  <button
+    mat-icon-button
+    class="nav-icon cart"
+    [matBadge]="cartItemsCount"
+    [routerLink]="['/cart']"
+  >
     <img src="/assets/shopping-cart.png" />
   </button>
 

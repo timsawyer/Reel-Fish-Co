@@ -1,3 +1,17 @@
-<p>
-  cart-item works!
-</p>
+<img [src]="imageUrl" />
+<div class="info">
+  <h3>{{ product.name }}</h3>
+  <div class="price">Price: ${{ product.price }}</div>
+
+  <span class="quantity">
+    <span>Quantity:</span>
+    <span class="quantity-number">{{ product.quantity }}</span>
+  </span>
+
+  <div class="actions">
+    <button mat-button>Edit</button>
+    <button mat-button (click)="removeItem()">Remove</button>
+    <button mat-button (click)="removeItem()">Save for later</button>
+  </div>
+</div>
+<div class="total-price">${{ totalPrice }}</div>

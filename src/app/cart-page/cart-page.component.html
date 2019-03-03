@@ -4,15 +4,51 @@
       <h1 class="section-title">Shopping cart</h1>
     </div>
     <div class="col-md-3">
+      <div class="go-to-checkout top">
+        <button mat-flat-button color="primary" class="add-to-cart">
+          Go to checkout
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" *ngIf="cartService.cartItems.length > 0">
+      <ng-container *ngFor="let product of cartService.cartItems; let i = index">
+        <app-cart-item [product]="product"></app-cart-item>
+        <hr *ngIf="i != cartService.cartItems.length - 1" />
+      </ng-container>
+    </div>
+    <div class="empty-message" *ngIf="cartService.cartItems.length == 0">
+      <h3>Cart empty</h3>
+      <a [routerLink]="['/shop']">Shop products</a>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="cartService.cartItems.length > 0">
+    <div class="col-md-12">
+      <div class="pricing">
+        <div class="line-item">
+          <h3>Subtotal</h3>
+          <span>${{ subtotal }}</span>
+        </div>
+        <div class="line-item">
+          <h3>Estimated shipping</h3>
+          <span>$12.00</span>
+        </div>
+        <hr />
+        <div class="line-item total">
+          <h3>Total</h3>
+          <span>${{ total }}</span>
+        </div>
+        <span class="tax-notice">Tax calculated at checkout</span>
+      </div>
+    </div>
+  </div>
+  <div class="row bottom">
+    <div class="go-to-checkout" *ngIf="cartService.cartItems.length > 0">
       <button mat-flat-button color="primary" class="add-to-cart">
         Go to checkout
       </button>
     </div>
-  </div>
-  <div class="row">
-    <app-cart-item
-      [product]="product"
-      *ngFor="let product of cartService.cartItems"
-    ></app-cart-item>
   </div>
 </div>

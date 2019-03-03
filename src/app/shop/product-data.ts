@@ -1,57 +1,79 @@
 export interface IProductDataItem {
+  id: string;
   name: string;
+  image: string;
   company: string;
   location: string;
   price: string;
 }
 
+export interface ICartItem extends IProductDataItem {
+  quantity: number;
+}
+
 export const ProductData: IProductDataItem[] = [
   {
+    id: '1',
     name: 'Coho Salmon Fillet, 8 oz',
+    image: '/assets/products/salmon1.png',
     company: 'Glacier Fish Company',
     location: 'Petersburg, AK',
     price: '11.49',
   },
   {
-    name: 'Coho Salmon Fillet, 8 oz',
+    id: '2',
+    name: 'Pink Salmon Fillet, 8 oz',
+    image: '/assets/products/salmon2.png',
     company: 'Glacier Fish Company',
     location: 'Petersburg, AK',
-    price: '11.49',
+    price: '12.40',
   },
   {
-    name: 'Coho Salmon Fillet, 8 oz',
+    id: '3',
+    name: 'Sockeye Salmon Fillet, 8 oz',
+    image: '/assets/products/salmon3.png',
     company: 'Glacier Fish Company',
     location: 'Petersburg, AK',
-    price: '11.49',
+    price: '13.49',
   },
   {
-    name: 'Coho Salmon Fillet, 8 oz',
+    id: '4',
+    name: 'Keta Salmon Fillet, 8 oz',
+    image: '/assets/products/salmon4.png',
     company: 'Glacier Fish Company',
     location: 'Petersburg, AK',
-    price: '11.49',
+    price: '10.49',
   },
   {
-    name: 'Coho Salmon Fillet, 8 oz',
+    id: '5',
+    name: 'King Salmon Fillet, 8 oz',
+    image: '/assets/products/salmon5.png',
     company: 'Glacier Fish Company',
     location: 'Petersburg, AK',
-    price: '11.49',
+    price: '18.99',
   },
   {
-    name: 'Coho Salmon Fillet, 8 oz',
+    id: '6',
+    name: 'Sockeye Salmon Fillet, 8 oz',
+    image: '/assets/products/salmon6.png',
     company: 'Glacier Fish Company',
     location: 'Petersburg, AK',
-    price: '11.49',
+    price: '13.49',
   },
   {
+    id: '7',
     name: 'Coho Salmon Fillet, 8 oz',
+    image: '/assets/products/salmon7.png',
     company: 'Glacier Fish Company',
     location: 'Petersburg, AK',
-    price: '11.49',
+    price: '10.49',
   },
   {
-    name: 'Coho Salmon Fillet, 8 oz',
+    id: '8',
+    name: 'Pink Salmon Fillet, 8 oz',
+    image: '/assets/products/salmon8.png',
     company: 'Glacier Fish Company',
     location: 'Petersburg, AK',
-    price: '11.49',
+    price: '14.99',
   },
 ];

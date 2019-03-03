@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IProductDataItem } from '../shop/product-data';
 import { CartService } from '../cart.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-product-list-item',
@@ -23,11 +24,15 @@ export class ProductListItemComponent implements OnInit {
     return this._product;
   }
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, private sanitizer: DomSanitizer) {}
 
   ngOnInit() {}
 
   onAddToCart() {
     this.cartService.addToCart(this.product);
+  }
+
+  getImageUrl(): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.product.image);
   }
 }

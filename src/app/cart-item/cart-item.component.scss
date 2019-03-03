@@ -1,0 +1,57 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  height: 160px;
+  width: 100%;
+  color: var(--secondary-color);
+
+  img {
+    height: 100%;
+    display: block;
+  }
+
+  .info {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  h3 {
+    color: var(--secondary-color);
+    font-weight: normal;
+    margin-top: 8px;
+    margin-left: 18px;
+    margin-bottom: 4px;
+  }
+
+  .price {
+    margin-left: 18px;
+    margin-bottom: 12px;
+  }
+
+  .quantity {
+    display: block;
+    margin-left: 18px;
+    margin-bottom: 16px;
+
+    .quantity-number {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      height: 32px;
+      border: 1px solid #ccc;
+      padding: 0 16px;
+      margin-left: 12px;
+    }
+  }
+
+  .total-price {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  img {
+    display: none !important;
+  }
+}
