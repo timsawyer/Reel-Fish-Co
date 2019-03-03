@@ -104,3 +104,9 @@
 .new-products {
   margin-bottom: 100px;
 }
+
+@media (max-width: 767px) {
+  .view-all-link {
+    display: none;
+  }
+}
