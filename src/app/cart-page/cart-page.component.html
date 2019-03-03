@@ -14,8 +14,8 @@
   <div class="row">
     <div class="col-md-12" *ngIf="cartService.cartItems.length > 0">
       <ng-container *ngFor="let product of cartService.cartItems; let i = index">
-        <app-cart-item [product]="product"></app-cart-item>
-        <hr *ngIf="i != cartService.cartItems.length - 1" />
+        <app-cart-item class="present-yourself-fast" [product]="product"></app-cart-item>
+        <hr *ngIf="i != cartService.cartItems.length - 1" class="present-yourself-fast" />
       </ng-container>
     </div>
     <div class="empty-message" *ngIf="cartService.cartItems.length == 0">
