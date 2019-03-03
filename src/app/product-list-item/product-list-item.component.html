@@ -1,0 +1,18 @@
+<img src="/assets/products/salmon1.png" />
+<div class="info">
+  <div class="left">
+    <h5 class="title">{{ product.name }}</h5>
+    <span class="company">by {{ product.company }}</span>
+    <span class="location">{{ product.location }}</span>
+    <button mat-flat-button color="primary" class="add-to-cart" (click)="onAddToCart()">
+      Add to cart
+    </button>
+  </div>
+  <div class="right">
+    <h4 class="price">
+      <span>$</span>
+      <span [innerText]="dollars"></span>
+      <sup [innerText]="cents"></sup>
+    </h4>
+  </div>
+</div>

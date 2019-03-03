@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="770px" viewBox="0 0 1920 770" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#ACE9E1" stop-opacity="0.139942089" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#ACE9E1" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#ACE9E1" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="V3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home--copy" transform="translate(0.000000, -2613.000000)">
+            <g id="Group-2" transform="translate(-127.000000, 2613.000000)">
+                <g id="Group-5" transform="translate(0.000000, 212.000000)">
+                    <path d="M2034,-6.39488462e-14 L2034,1649 L114,1649 L114,5.47667482 C837.880777,130.639669 1477.8807,128.814097 2034,-3.73034936e-14 Z" id="Combined-Shape-Copy" fill="url(#linearGradient-1)"></path>
+                    <path d="M51.7400881,169 C785.044053,-33.6666667 1466.28855,-33.6666667 2095.47357,169 C2140.18722,236.333333 2166.69604,571 2175,1173 L2175,1729 L0,1729 L51.7400881,169 Z" id="Path-4-Copy" fill-opacity="0.2" fill="url(#linearGradient-2)"></path>
+                </g>
+                <path d="M52.7400881,95 C786.044053,-31.6666667 1467.28855,-31.6666667 2096.47357,95 C2141.18722,137.083333 2167.69604,346.25 2176,722.5 L2176,1070 L1,1070 L52.7400881,95 Z" id="Path-4-Copy" fill-opacity="0.2" fill="url(#linearGradient-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

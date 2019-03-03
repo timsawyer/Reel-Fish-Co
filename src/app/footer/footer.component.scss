@@ -1,0 +1,59 @@
+:host {
+  background-image: url('/assets/footer-background-shape2.svg');
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 140px 0 100px 0;
+  margin-top: 50px;
+}
+
+.splash-logo {
+  display: block;
+  width: 128px;
+}
+
+.footer-links {
+  margin-top: 16px;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  span {
+    display: block;
+    font-size: 12px;
+    color: var(--secondary-color);
+    margin: 5px 0;
+    cursor: pointer;
+  }
+
+  span:hover {
+    text-decoration: underline;
+  }
+}
+
+.social-logo-ct {
+  display: block;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.social-logo {
+  display: inline-block;
+  height: 20px;
+  margin-right: 16px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.copyright {
+  margin-top: 48px;
+  font-size: 12px;
+  color: var(--secondary-color);
+  justify-content: center;
+}

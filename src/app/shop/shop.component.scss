@@ -1,0 +1,106 @@
+.notification {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  transition: height 400ms;
+  overflow: hidden;
+
+  .notification-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 160px;
+    overflow: hidden;
+
+    span {
+      color: white;
+      font-size: 13px;
+      line-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
+    }
+
+    .notification-close-btn {
+      margin-left: 120px;
+      color: #eee;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .notification {
+    .notification-content {
+      padding: 0 120px;
+    }
+    .notification-close-btn {
+      margin-left: 60px !important;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .notification {
+    .notification-content {
+      padding: 0 20px;
+    }
+    .notification-close-btn {
+      margin-left: 20px !important;
+    }
+  }
+}
+
+.notification.hidden {
+  height: 0;
+}
+
+.fishing-map {
+  margin-top: -46px;
+
+  iframe {
+    border: none;
+    width: 100%;
+    height: 480px;
+  }
+}
+
+.products {
+  margin-top: 60px;
+
+  .row {
+    justify-content: center;
+  }
+}
+
+.section-title {
+  color: var(--secondary-color);
+  border-left: 4px solid var(--primary-color);
+  padding: 0 12px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.view-all-link {
+  margin: 0;
+  color: var(--secondary-color);
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  cursor: pointer;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+.new-products {
+  margin-bottom: 100px;
+}

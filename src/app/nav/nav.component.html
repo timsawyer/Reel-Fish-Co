@@ -1,4 +1,4 @@
-<div class="logo">
+<div class="logo" [routerLink]="['/home']">
   <img src="/assets/logo.png" />
 </div>
 
@@ -13,13 +13,13 @@
 <div class="menu-bar">
   <a class="menu-item" [routerLink]="['/home']">Home</a>
   <a class="menu-item" [routerLink]="['/shop']">Shop</a>
-  <a class="menu-item" [routerLink]="['/our-story']">Our story</a>
+  <a class="menu-item">Our story</a>
   <a class="menu-item">Mission</a>
   <a class="menu-item">Recipes</a>
 
   <div class="spacer"></div>
 
-  <button mat-icon-button class="nav-icon">
+  <button mat-icon-button class="nav-icon" [matBadge]="cartItemsCount" [routerLink]="['/cart']">
     <img src="/assets/shopping-cart.png" />
   </button>
 
@@ -27,13 +27,15 @@
     <img src="/assets/avatar.png" />
   </button>
 
-  <button mat-stroked-button class="sign-up-button" color="primary">Sign up</button>
+  <button mat-stroked-button class="sign-up-button rf-stroked-button" color="primary">
+    Sign up
+  </button>
 </div>
 
 <div class="mobile-menu" [class.open]="mobileMenuOpen">
   <a class="menu-item" (click)="toggleMobileMenu()" [routerLink]="['/home']">Home</a>
   <a class="menu-item" (click)="toggleMobileMenu()" [routerLink]="['/shop']">Shop</a>
-  <a class="menu-item" (click)="toggleMobileMenu()" [routerLink]="['/our-story']">Our story</a>
+  <a class="menu-item" (click)="toggleMobileMenu()">Our story</a>
   <a class="menu-item" (click)="toggleMobileMenu()">Mission</a>
   <a class="menu-item" (click)="toggleMobileMenu()">Recipes</a>
 </div>

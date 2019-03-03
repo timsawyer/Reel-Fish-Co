@@ -1,0 +1,18 @@
+<div class="container cart-contents">
+  <div class="row">
+    <div class="col-md-9">
+      <h1 class="section-title">Shopping cart</h1>
+    </div>
+    <div class="col-md-3">
+      <button mat-flat-button color="primary" class="add-to-cart">
+        Go to checkout
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <app-cart-item
+      [product]="product"
+      *ngFor="let product of cartService.cartItems"
+    ></app-cart-item>
+  </div>
+</div>

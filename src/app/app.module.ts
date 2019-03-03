@@ -15,10 +15,25 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
+  MatBadgeModule,
 } from '@angular/material';
+import { FooterComponent } from './footer/footer.component';
+import { ProductListItemComponent } from './product-list-item/product-list-item.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CartItemComponent } from './cart-item/cart-item.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, HomeComponent, ShopComponent, OurStoryComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    HomeComponent,
+    ShopComponent,
+    OurStoryComponent,
+    FooterComponent,
+    ProductListItemComponent,
+    CartPageComponent,
+    CartItemComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +44,7 @@ import {
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

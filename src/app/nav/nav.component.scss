@@ -1,6 +1,8 @@
 .logo {
   position: fixed;
-  z-index: 2;
+  cursor: pointer;
+  outline: none;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 80px;
@@ -21,7 +23,7 @@
 .mobile-menu-button {
   display: none;
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 80px;
@@ -43,6 +45,7 @@
 .mobile-menu {
   position: fixed;
   box-sizing: border-box;
+  z-index: 2;
   left: 0;
   top: 80px;
   width: 0px;
@@ -51,7 +54,7 @@
   display: block;
   overflow: hidden;
   transition: width 600ms;
-  box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.08);
 
   .menu-item {
     display: block;
@@ -73,7 +76,7 @@
   position: fixed;
   width: 100%;
   height: 80px;
-  z-index: 2;
+  z-index: 4;
   top: 0;
   left: 0;
   justify-content: center;
@@ -88,6 +91,7 @@
   box-sizing: border-box;
   background: white;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   height: 80px;
@@ -140,12 +144,6 @@
 
 .sign-up-button {
   margin-left: 12px;
-  border: 2px solid var(--primary-color);
-  border-radius: 30px;
-  color: var(--secondary-color);
-  padding: 7px 34px;
-  font-size: 16px;
-  line-height: 16px;
 }
 
 @media (max-width: 1200px) {

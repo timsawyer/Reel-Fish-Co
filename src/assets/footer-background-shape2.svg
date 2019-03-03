@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="587px" viewBox="0 0 1920 587" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#ACE9E1" stop-opacity="0.139942089" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#ACE9E1" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="V3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shopping-Cart" transform="translate(0.000000, -2726.000000)">
+            <g id="Group-8" transform="translate(-84.000000, 2726.000000)">
+                <g id="Group-5">
+                    <path d="M2004,-6.39488462e-14 L2004,1649 L84,1649 L84,5.47667482 C807.880777,130.639669 1447.8807,128.814097 2004,-3.73034936e-14 Z" id="Combined-Shape-Copy" fill="url(#linearGradient-1)"></path>
+                    <path d="M51.7400881,169 C785.044053,-33.6666667 1466.28855,-33.6666667 2095.47357,169 C2140.18722,236.333333 2166.69604,571 2175,1173 L2175,1729 L0,1729 L51.7400881,169 Z" id="Path-4-Copy" fill-opacity="0.2" fill="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

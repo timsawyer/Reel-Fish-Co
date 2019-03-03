@@ -1,0 +1,16 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+  - url: /(.+).(css|html|js|json|png|svg)
+    static_files: dist/angular-codesign/\1.\2
+    upload: dist/angular-codesign/.*
+
+  - url: /(.*)
+    static_files: dist/angular-codesign/index.html
+    upload: dist/angular-codesign/index.html
+
+# Skip any files not in the dist folder
+skip_files:
+  - (?!^dist|docs)

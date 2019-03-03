@@ -1,3 +1,54 @@
-<p>
-  shop works!
-</p>
+<div class="notification" [class.hidden]="notificationHidden">
+  <div class="notification-content">
+    <span
+      >This map depicts where each of our partner fishing boat is currently located, and when their
+      catch will be available. We use this tracking to ensure the fishermen are meeting our
+      sustainability requirements, and to inform the customer about where their fish originated
+      from.
+    </span>
+    <button mat-icon-button class="notification-close-btn" (click)="hideNotification()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div class="fishing-map">
+  <div class="bar-cover"></div>
+  <iframe
+    src="https://www.google.com/maps/d/u/1/embed?mid=1aYkasO4IHNfQHApKGXxgWdDtC13CvzrG&center=37.4218,-122.0840"
+  ></iframe>
+</div>
+
+<div class="container products">
+  <div class="row">
+    <div class="col-md-9">
+      <h1 class="section-title">Products</h1>
+    </div>
+    <div class="col-md-3">
+      <p class="view-all-link">View all ></p>
+    </div>
+  </div>
+  <div class="row">
+    <app-product-list-item
+      [product]="product"
+      *ngFor="let product of productList"
+    ></app-product-list-item>
+  </div>
+</div>
+
+<div class="container products new-products">
+  <div class="row">
+    <div class="col-md-9">
+      <h1 class="section-title">New</h1>
+    </div>
+    <div class="col-md-3">
+      <p class="view-all-link">View all ></p>
+    </div>
+  </div>
+  <div class="row">
+    <app-product-list-item
+      [product]="product"
+      *ngFor="let product of newProductsList"
+    ></app-product-list-item>
+  </div>
+</div>

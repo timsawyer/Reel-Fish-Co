@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="770px" viewBox="0 0 1920 770" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 5 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#ACE9E1" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="V3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.2">
+        <g id="ReelFish-Website-Home---Full" transform="translate(0.000000, -2613.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-5-Copy" transform="translate(-126.000000, 2613.000000)">
+                <path d="M51.7400881,95 C785.044053,-31.6666667 1466.28855,-31.6666667 2095.47357,95 C2140.18722,137.083333 2166.69604,346.25 2175,722.5 L2175,1070 L0,1070 L51.7400881,95 Z" id="Path-4-Copy"></path>
+            </g>
+        </g>
+    </g>
+</svg>
