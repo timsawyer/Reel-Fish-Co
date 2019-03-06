@@ -8,7 +8,13 @@
         with higher margins for thinking about future generations.
       </p>
 
-      <button mat-stroked-button class="rf-stroked-button" color="primary">
+      <button
+        mat-stroked-button
+        class="rf-stroked-button"
+        color="primary"
+        [routerLink]="['/shop']"
+        [queryParams]="{ localFisherman: true }"
+      >
         Connect with local fishermen
       </button>
     </div>
@@ -69,7 +75,13 @@
 </div>
 
 <div class="connect-big">
-  <button mat-stroked-button class="rf-stroked-button" color="primary">
+  <button
+    mat-stroked-button
+    class="rf-stroked-button"
+    color="primary"
+    [routerLink]="['/shop']"
+    [queryParams]="{ localFisherman: true }"
+  >
     Connect with local fishermen
   </button>
 </div>

@@ -1,10 +1,38 @@
+<div class="local-fisherman" [class.hidden]="!showLocalFisherman">
+  <div class="container">
+    <div class="row">
+      <div class="hidden-small col-6 fisherman-img-col present-yourself-slow">
+        <div class="image-clip">
+          <img src="/assets/glacier-fish-co.png" />
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 fishman-desc-col present-yourself-slow">
+        <h1>Glacier Fish Company</h1>
+        <div>Seattle, WA</div>
+        <p>
+          Bruce Smith and his company, Glacier Fish Company, had been marketing hook-and-line caught
+          wild salmon from southeast Alaska since 1978. Triad fish are caught using slow
+          hook-and-line method to minimize stress, processed immediately on-board, and frozen within
+          90 minutes. Each fish is then individually hand dipped in fresh seawater to create a
+          protective glaze and tagged to ensure each fish is traceable to the source.
+        </p>
+        <button mat-flat-button color="accent" (click)="scrollToProducts()">
+          View products
+        </button>
+        <button mat-icon-button class="fisherman-close-btn" (click)="closeFisherman()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="notification" [class.hidden]="notificationHidden">
   <div class="notification-content">
     <span
-      >This map depicts where each of our partner fishing boat is currently located, and when their
-      catch will be available. We use this tracking to ensure the fishermen are meeting our
-      sustainability requirements, and to inform the customer about where their fish originated
-      from.
+      >This map depicts where each of our partner fishing boats are currently located. We use this
+      to ensure the fishermen are meeting our sustainability requirements and to show where their
+      fish originated from.
     </span>
     <button mat-icon-button class="notification-close-btn" (click)="hideNotification()">
       <mat-icon>close</mat-icon>
@@ -22,7 +50,7 @@
 <div class="container products">
   <div class="row">
     <div class="col-md-9">
-      <h1 class="section-title">Products</h1>
+      <h1 id="productsTitle" class="section-title">Products</h1>
     </div>
     <div class="col-md-3">
       <p class="view-all-link">View all ></p>
