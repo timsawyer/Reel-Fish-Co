@@ -25,7 +25,7 @@ export const ProductData: IProductDataItem[] = [
     name: 'Pink Salmon Fillet, 8 oz',
     image: '/assets/products/salmon2.png',
     company: 'Glacier Fish Company',
-    location: 'Petersburg, AK',
+    location: 'Anchorage, AK',
     price: '12.40',
   },
   {
@@ -33,7 +33,7 @@ export const ProductData: IProductDataItem[] = [
     name: 'Sockeye Salmon Fillet, 8 oz',
     image: '/assets/products/salmon3.png',
     company: 'Glacier Fish Company',
-    location: 'Petersburg, AK',
+    location: 'St Michael, AK',
     price: '13.49',
   },
   {
@@ -41,7 +41,7 @@ export const ProductData: IProductDataItem[] = [
     name: 'Keta Salmon Fillet, 8 oz',
     image: '/assets/products/salmon4.png',
     company: 'Glacier Fish Company',
-    location: 'Petersburg, AK',
+    location: 'Juneau, AK',
     price: '10.49',
   },
   {
@@ -49,7 +49,7 @@ export const ProductData: IProductDataItem[] = [
     name: 'King Salmon Fillet, 8 oz',
     image: '/assets/products/salmon5.png',
     company: 'Glacier Fish Company',
-    location: 'Petersburg, AK',
+    location: 'Victoria, BC',
     price: '18.99',
   },
   {
@@ -57,7 +57,7 @@ export const ProductData: IProductDataItem[] = [
     name: 'Sockeye Salmon Fillet, 8 oz',
     image: '/assets/products/salmon6.png',
     company: 'Glacier Fish Company',
-    location: 'Petersburg, AK',
+    location: 'Seattle, WA',
     price: '13.49',
   },
   {
@@ -65,7 +65,7 @@ export const ProductData: IProductDataItem[] = [
     name: 'Coho Salmon Fillet, 8 oz',
     image: '/assets/products/salmon7.png',
     company: 'Glacier Fish Company',
-    location: 'Petersburg, AK',
+    location: 'Juneau, AK',
     price: '10.49',
   },
   {
@@ -73,7 +73,7 @@ export const ProductData: IProductDataItem[] = [
     name: 'Pink Salmon Fillet, 8 oz',
     image: '/assets/products/salmon8.png',
     company: 'Glacier Fish Company',
-    location: 'Petersburg, AK',
+    location: 'Anchorage, AK',
     price: '14.99',
   },
 ];
