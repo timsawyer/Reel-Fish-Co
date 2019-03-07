@@ -17,7 +17,9 @@ export class ShopComponent implements OnInit {
     this.showLocalFisherman = this.route.snapshot.queryParams.localFisherman;
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    window.scrollTo({ top: 0 });
+  }
 
   hideNotification() {
     this.notificationHidden = true;
