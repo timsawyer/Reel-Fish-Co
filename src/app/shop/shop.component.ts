@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductData } from './product-data';
 import { ActivatedRoute } from '@angular/router';
+import { FishingCompanyData, IFishingCatch } from './fishing-company-data';
+import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
+import { CartService } from '../cart.service';
+
+const FULL_CATCH_AMOUNT = 200;
 
 @Component({
   selector: 'app-shop',
@@ -10,11 +15,32 @@ import { ActivatedRoute } from '@angular/router';
 export class ShopComponent implements OnInit {
   notificationHidden = false;
   productList = ProductData;
+  fishingCompanyList = FishingCompanyData;
+  currentFishingCompanyIndex = 0;
+  currentFishingCompany = FishingCompanyData[0];
+
   newProductsList = ProductData.slice(0, 4);
   showLocalFisherman = false;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private sanitizer: DomSanitizer,
+    private cartService: CartService
+  ) {
     this.showLocalFisherman = this.route.snapshot.queryParams.localFisherman;
+  }
+
+  public getCatchPercentage(c: IFishingCatch): string {
+    return (c.amount / FULL_CATCH_AMOUNT) * 100 + '%';
+  }
+
+  public getCatchDesc(c: IFishingCatch): string {
+    return `${c.amount}lbs ${c.name} on ${c.date}`;
+  }
+
+  public reserveProduct() {
+    // hard coded for demo - just add pink salmon
+    this.cartService.addToCart(ProductData[1]);
   }
 
   ngOnInit() {
@@ -59,5 +85,25 @@ export class ShopComponent implements OnInit {
     const productsTitle = document.getElementById('productsTitle');
     const y = productsTitle.getBoundingClientRect().top - 90;
     this._scrollTo(document.scrollingElement, y, 1000);
+  }
+
+  public rotateGalleryLeft() {
+    this.currentFishingCompanyIndex--;
+    if (this.currentFishingCompanyIndex < 0) {
+      this.currentFishingCompanyIndex = this.fishingCompanyList.length - 1;
+    }
+    this.currentFishingCompany = this.fishingCompanyList[this.currentFishingCompanyIndex];
+  }
+
+  public rotateGalleryRight() {
+    this.currentFishingCompanyIndex++;
+    if (this.currentFishingCompanyIndex >= this.fishingCompanyList.length) {
+      this.currentFishingCompanyIndex = 0;
+    }
+    this.currentFishingCompany = this.fishingCompanyList[this.currentFishingCompanyIndex];
+  }
+
+  public getGalleryImageSrc(): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.currentFishingCompany.image);
   }
 }
